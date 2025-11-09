@@ -1,206 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kharaj Chakraborty - Portfolio </title>
+    <title>Typing Welcome Animation</title>
     <style>
-        :root {
-            --primary_color: rgb(0, 0, 0);
-            --secondery_color: rgb(35, 214, 35);
-            --text_color: white;
-        }
-
         * {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            background-color: #000000;
-        }
-
-        .navbar {
-            position: fixed;
-            width: 100vw;
-            height: 70px;
-            background-color: var(--primary_color);
-            border-bottom: 2px solid var(--secondery_color);
-            z-index: 100;
-
-        }
-
-        nav ul {
-            margin-top: 20px;
-            list-style: none;
-            display: inline-flex;
-            gap: 2vw;
-        }
-
-        nav ul a {
-            text-decoration: none;
-            color: var(--text_color);
-        }
-
-        nav ul a:hover {
-            color: var(--secondery_color);
-            transition-property: color;
-            transition-duration: 2s;
-            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
-
-        nav ul a:last-child {
-            margin-right: 2vw;
-        }
-
-        .logo {
-            display: inline-flex;
-            margin-left: 2vw;
-            color: var(--text_color);
-
-        }
-
-        .home_container {
-            padding: 50px 50px 0px 50px;
-            padding-top: 100px;
-            width: 100vw;
-            border-left: 2px solid var(--secondery_color);
+            font-family: 'Courier New', monospace;
+            background: #0f0f0f;
             height: 100vh;
-        }
-
-        nav>h1 {
-            margin-top: 10px;
-        }
-
-        nav h1:nth-child(2) {
-            margin-top: 10px;
-            display: inline;
-            margin-right: 68vw;
-            color: var(--secondery_color);
-        }
-
-        .hello {
-            display: inline-block;
-            margin: 20px 20px 0px 20px;
-            color: var(--secondery_color);
-            font-size: 100px;
-        }
-
-        .name {
-            display: inline-block;
-            margin-left: 40px;
-            color: var(--text_color);
-            font-size: x-large;
-        }
-
-        .intro {
-            display: inline-block;
-            color: var(--secondery_color);
-            margin: 20px 20px 0px 50px;
-            font-size: large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            color: #00ff00;
         }
 
         .terminal {
-            position: absolute;
-            top: 120px;
-            width: 500px;
-            height: auto;
-            z-index: 99;
-        }
-
-        .btn {
-            display: flex;
-            margin: 50px;
-            gap: 20px;
-        }
-
-        .btn button {
+            text-align: left;
+            max-width: 600px;
             padding: 20px;
-            background-color: var(--primary_color);
-            color: var(--secondery_color);
-            border: 2px solid var(--secondery_color);
-            border-radius: 5px;
         }
 
-        .btn button:hover {
-            background-color: var(--secondery_color);
-            color: var(--primary_color);
-            transition-property: color background-color;
-            transition-duration: 0.5s;
-            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        .prompt {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
         }
 
-        .social-icons {
-            position: absolute;
-            padding-left: 65px;
+        .typing-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: blink 1s infinite;
         }
 
-        .social-icons a {
-            margin-left: 30px;
-
+        .cursor {
+            display: inline-block;
+            width: 2px;
+            background: #00ff00;
+            animation: blink 1s infinite;
         }
 
-        .social-icons a img {
-            width: 30px;
-            height: auto;
-            filter: invert(1);
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
         }
 
-        .social-icons a img:hover {
-            filter: invert(53%) sepia(85%) saturate(300%) hue-rotate(67deg) brightness(110%) contrast(101%);
-            transition-property: filter;
-            transition-duration: 0.5s;
-            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        .loading-bar {
+            width: 0%;
+            height: 2px;
+            background: #00ff00;
+            margin-top: 20px;
+            animation: load 3s ease-in-out forwards;
+        }
+
+        @keyframes load {
+            to {
+                width: 100%;
+            }
         }
     </style>
 </head>
-
 <body>
-    <nav class="navbar">
-        <h1 class="logo">kharaj</h1>
-        <h1>ch</h1>
-        <ul>
-            <a href="#Home">
-                <li>Home</li>
-            </a>
-            <a href="">
-                <li>About</li>
-            </a>
-            <a href="">
-                <li>Projects</li>
-            </a>
-            <a href="">
-                <li>Contact</li>
-            </a>
-        </ul>
-    </nav>
-
-    <!-- Home Page -->
-    <div class="home_container" id="Home">
-        <h1 class="hello">Hello!</h1>
-        <br>
-        <h2 class="name">I Am Kharaj Chakraborty</h2>
-        <br>
-        <p class="intro">
-            I create beautiful, functional websites and applications with a <br>
-            focus on user experience and clean code.
-        </p>
-        <br>
-        <h1 style="color: rgb(35, 214, 35); margin: 20px 20px 0px 80px; display: inline-block;">"LET'S BUILD SOMETHING
-            AMAZING TOGETHER"</h1>
-        <img src="terminal.gif" class="terminal">
-        <br>
-        <div class="btn">
-            <button class="btn1">View My Work</button>
-            <button class="btn2">Get In Touch</button>
-        </div>
-        <div class="social-icons">
-            <a href="https://github.com/kharajch"><img src="github.png" alt="github"></a>
-            <a href="https://www.linkedin.com/in/kharajch"><img src="linkedin.png" alt="linkedin"></a>
-            <a href="https://x.com/kharajch"><img src="twitter.png" alt="twitter"></a>
-        </div>
+    <div class="terminal">
+        <div class="prompt">user@anonymous:~$ ./welcome.sh</div>
+        <div id="typing-container" style="text-align: center;" class="typing-text"></div>
+        <div class="loading-bar"></div>
     </div>
-</body>
 
+    <script>
+        const text = "Welcome";
+        const typingContainer = document.getElementById('typing-container');
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                typingContainer.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            } else {
+                // Start loading animation
+                setTimeout(() => {
+                    document.body.innerHTML = `
+                        <div style="text-align: center; color: #00ff00; padding: 50px;">
+                            <h1>System Ready</h1>
+                            <p>Welcome to my portfolio!</p>
+                        </div>
+                    `;
+                }, 2000);
+            }
+        }
+        setTimeout(typeWriter, 1000);
+  setTimeout(() => {
+             document.location = "main.html"; 
+  }, 5000);
+    </script>
+</body>
 </html>
