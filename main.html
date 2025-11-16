@@ -15,277 +15,127 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
-
-    <style>
-        /* Universal*/
-
-        :root {
-            --primary_color: black;
-            --secondery_color: #00ff00;
-            --text_color: white;
-        }
-
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        body {
-            background-color: #000000;
-            overflow: hidden ;
-        }
-
-        /* Navbar */
-        .navbar {
-            position: fixed;
-            display: flex;
-            width: 100vw;
-            height: 70px;
-            background-color: var(--primary_color);
-            border-bottom: 2px solid var(--secondery_color);
-            z-index: 100;
-            font-family: "Ubuntu Mono", monospace;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2vw;
-        }
-
-        nav ul a {
-            text-decoration: none;
-            color: var(--text_color);
-        }
-
-        nav ul a:hover {
-            color: var(--secondery_color);
-            transition-property: color;
-            transition-duration: 2s;
-            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
-
-        nav ul a:last-child {
-            margin-right: 2vw;
-        }
-
-        .logo {
-            display: inline-flex;
-            margin-left: 2vw;
-            color: var(--text_color);
-        }
-
-        .logo::after {
-            content: "ch";
-            color: var(--secondery_color);
-        }
-
-        /* Home Page */
-
-        .home_container {
-            padding: 50px 50px 0px 50px;
-            padding-top: 100px;
-            width: 100vw;
-            border-left: 2px solid var(--secondery_color);
-            height: 100vh;
-            font-family: "Stack Sans Text", sans-serif;
-        }
-
-        .home_container h1 {
-            font-family: "Ubuntu Mono", monospace;
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        .hello {
-            display: inline-block;
-            margin: 20px 20px 0px 20px;
-            color: var(--secondery_color);
-            font-size: 100px;
-        }
-
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-
-            to {
-                width: 50%;
-            }
-
-        }
-
-        @keyframes blink {
-
-            from,
-            to {
-                border-color: transparent;
-            }
-
-            50% {
-                border-color: var(--secondery_color);
-            }
-
-        }
-
-        .home_container h1 {
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: .15em solid var(--secondery_color);
-            animation:
-                typing 4s steps(30, end) forwards,
-                blink .75s step-end 1;
-        }
-
-        .name {
-            display: inline-block;
-            margin-left: 40px;
-            color: var(--text_color);
-            font-size: x-large;
-            font-family: "Stack Sans Notch", sans-serif;
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: .15em solid var(--secondery_color);
-            animation:
-                typing 4s steps(30, end) forwards,
-                blink .75s step-end 1;
-
-        }
-
-        .intro {
-            display: inline-block;
-            color: var(--secondery_color);
-            margin: 20px 20px 0px 50px;
-            font-size: large;
-            font-family: "Cascadia Mono", sans-serif;
-
-            animation:
-                typing 4s steps(30, end) forwards,
-                blink .75s step-end 1;
-        }
-
-        .slogan {
-            color: rgb(35, 214, 35);
-            margin: 20px 20px 0px 80px;
-            display: inline-block;
-        }
-
-        .terminal {
-            position: absolute;
-            top: 120px;
-            width: 500px;
-            height: auto;
-            z-index: 99;
-        }
-
-        .btn {
-            display: flex;
-            margin: 50px;
-            gap: 20px;
-        }
-
-        .btn button {
-            padding: 20px;
-            background-color: var(--primary_color);
-            color: var(--secondery_color);
-            border: 2px solid var(--secondery_color);
-            border-radius: 5px;
-            font-family: "Ubuntu Mono", monospace;
-            font-weight: 700;
-            font-style: italic;
-        }
-
-        .btn button:hover {
-            background-color: var(--secondery_color);
-            color: var(--primary_color);
-            transition-property: color background-color;
-            transition-duration: 0.5s;
-            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-
-        .social-icons {
-            position: absolute;
-            padding-left: 65px;
-        }
-
-        .social-icons a {
-            margin-left: 30px;
-
-        }
-
-        .social-icons a img {
-            width: 30px;
-            height: auto;
-            filter: invert(1);
-        }
-
-        .social-icons a img:hover {
-            filter: invert(53%) sepia(85%) saturate(300%) hue-rotate(67deg) brightness(110%) contrast(101%);
-            transition-property: filter;
-            transition-duration: 0.5s;
-            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <h1 class="logo">kharaj</h1>
         <ul>
-            <a href="">
+            <a href="#Home">
                 <li>Home</li>
             </a>
-            <a href="">
+            <a href="#About">
                 <li>About</li>
             </a>
-            <a href="">
+            <a href="#Projects">
                 <li>Projects</li>
             </a>
-            <a href="">
+            <a href="#Contact">
                 <li>Contact</li>
             </a>
         </ul>
     </nav>
 
-    <!-- Home Page -->
-    <div class="home_container" id="Home">
-        <h1 class="hello">Hello!</h1>
-        <br>
-        <h2 class="name">I Am Kharaj Chakraborty</h2>
-        <br>
-        <p class="intro">
-            I create beautiful, functional websites and applications with a <br>
-            focus on user experience and clean code.
-        </p>
-        <br>
-        <h1 class="slogan">"LET'S
-            BUILD SOMETHING
-            AMAZING TOGETHER"</h1>
-        <img src="terminal.gif" class="terminal">
-        <br>
-        <div class="btn">
-            <button class="btn1">View My Work</button>
-            <button class="btn2">Get In Touch</button>
+    <div class="main">
+
+        <!-- Home Page -->
+        <div class="home_container" id="Home">
+            <h1 class="hello">Hello!</h1>
+            <br>
+            <h2 class="name">I Am Kharaj Chakraborty</h2>
+            <br>
+            <p class="intro">
+                I create beautiful, functional websites and applications with a <br>
+                focus on user experience and clean code.
+            </p>
+            <br>
+            <h1 class="slogan">"LET'S
+                BUILD SOMETHING
+                AMAZING TOGETHER"</h1>
+            <img src="terminal.gif" class="terminal">
+            <br>
+            <div class="btn">
+                <a href="#Projects"><button class="btn1">View My Work</button></a>
+                <a href="#Contact"><button class="btn1">Get In Touch</button></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/kharajch"><img src="github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/kharajch"><img src="linkedin.png" alt="linkedin"></a>
+                <a href="https://x.com/kharajch"><img src="twitter.png" alt="twitter"></a>
+            </div>
         </div>
-        <div class="social-icons">
-            <a href="https://github.com/kharajch"><img src="github.png" alt="github"></a>
-            <a href="https://www.linkedin.com/in/kharajch"><img src="linkedin.png" alt="linkedin"></a>
-            <a href="https://x.com/kharajch"><img src="twitter.png" alt="twitter"></a>
+
+        <!-- About Page -->
+        <h1 class="heading" id="About" >About Me</h1>
+
+        <div class="about_container" >
+
+            <p class="details">For me, coding isn't just a career path—it's genuinely a calling. I thrive on the deep
+                satisfaction of taking a complicated problem and breaking it down into an elegant, working solution.
+                This isn't just about punching the clock; I have a relentless curiosity and a commitment to constantly
+                getting better, whether that means staying up late to finally conquer a tricky new framework or diving
+                into complex documentation to understand the why behind a best practice. I approach every line of code
+                with dedication and focus, aiming for clarity and efficiency because I believe the quality of the
+                solution matters just as much as its functionality. This drive for continuous improvement and delivering
+                impactful, high-quality work is what defines my professional journey in software development.
+                <br>
+                <span class="bubble">HTML</span>
+                <span class="bubble">CSS</span>
+                <span class="bubble">JS</span>
+                <span class="bubble">Node JS</span>
+                <span class="bubble">React JS</span>
+            </p>
+            <img src="image.jpg" alt="kharaj" class="myimg">
+        </div>
+
+        <!-- Projects -->
+        <h1 class="heading" style="margin-top: 200px;" id="Projects">Projects</h1>
+
+        <div class="projects_container">
+
+            
+            <div class="projects_card">
+
+                <img src="Mind Matters.png"
+                    alt="">
+                <h3>Mind Matters</h3>
+                <p>
+                    This interactive personality assessment quiz app features 17 questions with varying option formats designed to evaluate different aspects of your personality and behavior. The elegantly designed app presents questions in a modern gradient interface with smooth animations and progress tracking. As you answer each question, your selections accumulate points that ultimately categorize your results as Good, Moderate, or Severe, providing insight into your psychological patterns and tendencies. The responsive design ensures an engaging experience across all devices, complete with intuitive navigation and a restart option for repeated use.
+                </p>
+                <div class="card_btn">
+                    <a href=""><button>View Code</button></a>
+                </div>
+            </div>
+            <div class="projects_card">
+
+                <img src="c.jpg"
+                    alt="">
+                <h3>Reciept Generator</h3>
+                <p>
+                    This is a menu-driven C console application designed to generate and manage restaurant receipts. The user can either create a new receipt by entering item details, which the program calculates with GST and prints to the screen, or view past records. When a new receipt is generated, it is saved as a unique, timestamped text file, and its filename is logged into a central index file. The program’s viewing function reads this index to show all saved receipts, allowing the user to select and display the full content of any specific past bill, though its operation is limited by the use of hardcoded file paths.
+                </p>
+                <div class="card_btn">
+                    <a href=""><button>View Code</button></a>
+                </div>
+            </div>
+            <div class="projects_card">
+
+                <img src="Mind Matters.png"
+                    alt="">
+                <h3>Photography</h3>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga doloribus minima eveniet harum voluptas, quam dolor neque! Iste dolor natus, voluptas a laboriosam dolores iusto incidunt, dolore adipisci dicta voluptatum, quisquam hic commodi harum nesciunt! Omnis ea sit ipsum eligendi porro reiciendis explicabo quaerat reprehenderit, repudiandae officiis illum temporibus deserunt totam et enim aliquam debitis sed recusandae quas, aperiam maxime fugit similique. Esse, libero, quod beatae ipsum iste unde nisi cum dolore reiciendis exercitationem at officia corrupti.
+                </p>
+                <div class="card_btn">
+                    <a href=""><button>View Code</button></a>
+                </div>
+            </div>
+
         </div>
     </div>
-    <script>
-        const animation_end = () => {
-            document.getElementsByClassName("hello")[0].setAttribute("style", "border: 0px;")
-            document.getElementsByClassName("intro")[0].setAttribute("style", "border: 0px;")
-            document.getElementsByClassName("name")[0].setAttribute("style", "border: 0px;")
-            document.getElementsByClassName("slogan")[0].setAttribute("style", "border: 0px;")
-        }
-        setTimeout(() => {
-            animation_end();
-        }, 4000);
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
