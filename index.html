@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <style>
+        :root{
+            --primaray_color : red;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -19,7 +22,7 @@
             justify-content: center;
             align-items: center;
             overflow-x: hidden;
-            color: #00ff00;
+            color: var(--primaray_color);
         }
 
         .terminal {
@@ -44,7 +47,7 @@
         .cursor {
             display: inline-block;
             width: 2px;
-            background: #00ff00;
+            background: var(--primaray_color);
             animation: blink 1s infinite;
         }
 
@@ -56,7 +59,7 @@
         .loading-bar {
             width: 0%;
             height: 2px;
-            background: #00ff00;
+            background: var(--primaray_color);
             margin-top: 20px;
             animation: load 3s ease-in-out forwards;
         }
@@ -89,7 +92,7 @@
                 // Start loading animation
                 setTimeout(() => {
                     document.body.innerHTML = `
-                        <div style="text-align: center; color: #00ff00; padding: 50px;">
+                        <div style="text-align: center; color: var(--primary_color); padding: 50px;">
                             <h1>System Ready</h1>
                             <p>Welcome to my portfolio!</p>
                         </div>
