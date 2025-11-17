@@ -87,6 +87,49 @@
             margin-bottom: 150px;
         }
 
+        .terminal {
+            display: inline-block;
+            position: absolute;
+            left: 850px;
+            top: 100px;
+            width: 600px;
+        }
+
+        .terminal:hover {
+            border: 5px solid var(--secondery_color);
+            transition-property: border;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        @media only screen and (max-width: 1450px) {
+            .terminal {
+                width: 500px;
+                top: 120px;
+            }
+        }
+
+        @media only screen and (max-width: 1355px) {
+            .terminal {
+                width: 450px;
+                top: 120px;
+            }
+        }
+
+        @media only screen and (max-width: 1305px) {
+            .terminal {
+                width: 450px;
+                left: 800px;
+                top: 120px;
+            }
+        }
+
+        @media only screen and (max-width: 1255px) {
+            .terminal {
+                display: none;
+            }
+        }
+
         .home_container h1 {
             font-family: "Ubuntu Mono", monospace;
             font-weight: 700;
@@ -280,6 +323,10 @@
             transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
+        .myimg2 {
+            display: none;
+        }
+
         /* Projects */
         .projects_container {
             display: flex;
@@ -370,8 +417,8 @@
 
         @media only screen and (max-width : 860px) {
             .about_container {
-                display: block;
-                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
                 margin-left: 0px;
             }
 
@@ -381,6 +428,7 @@
             }
 
             .details {
+                width: 90vw;
                 word-break: keep-all;
                 font-size: large;
             }
@@ -392,7 +440,7 @@
             }
 
             .details {
-                text-align: center;
+                width: 90vw;
                 word-break: keep-all;
             }
         }
@@ -401,11 +449,20 @@
             .myimg {
                 display: none;
             }
+
+            .myimg2 {
+                display: inline-block;
+                margin-top: 50px;
+                border-radius: 50%;
+                border: 5px solid var(--secondery_color);
+            }
+
         }
 
         /* Contact */
         .contact_container {
-            border-top: 5px solid var(--secondery_color);
+            border: 5px solid var(--secondery_color);
+            border-radius: 5px;
             user-select: text;
         }
 
