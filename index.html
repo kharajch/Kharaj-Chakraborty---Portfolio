@@ -4,72 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <style>
-        :root{
-            --primaray_color : red;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Courier New', monospace;
-            background: #0f0f0f;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow-x: hidden;
-            color: var(--primaray_color);
-        }
-
-        .terminal {
-            text-align: left;
-            max-width: 600px;
-            padding: 20px;
-        }
-
-        .prompt {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .typing-text {
-            font-size: 2.5rem;
-            font-weight: bold;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: blink 1s infinite;
-        }
-
-        .cursor {
-            display: inline-block;
-            width: 2px;
-            background: var(--primaray_color);
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-
-        .loading-bar {
-            width: 0%;
-            height: 2px;
-            background: var(--primaray_color);
-            margin-top: 20px;
-            animation: load 3s ease-in-out forwards;
-        }
-
-        @keyframes load {
-            to {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/welcome_style.css">
 </head>
 <body>
     <div class="terminal">
@@ -78,32 +13,6 @@
         <div class="loading-bar"></div>
     </div>
 
-    <script>
-        const text = "Welcome";
-        const typingContainer = document.getElementById('typing-container');
-        let index = 0;
-
-        function typeWriter() {
-            if (index < text.length) {
-                typingContainer.innerHTML += text.charAt(index);
-                index++;
-                setTimeout(typeWriter, 100);
-            } else {
-                // Start loading animation
-                setTimeout(() => {
-                    document.body.innerHTML = `
-                        <div style="text-align: center; color: var(--primary_color); padding: 50px;">
-                            <h1>System Ready</h1>
-                            <p>Welcome to my portfolio!</p>
-                        </div>
-                    `;
-                }, 2000);
-            }
-        }
-        setTimeout(typeWriter, 1000);
-  setTimeout(() => {
-             document.location = "main.html"; 
-  }, 5000);
-    </script>
+    <script src="js/welcome_script.js"></script>
 </body>
 </html>
