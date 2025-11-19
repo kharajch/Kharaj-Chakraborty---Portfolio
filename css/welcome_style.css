@@ -16,6 +16,7 @@
             align-items: center;
             overflow-x: hidden;
             color: var(--primaray_color);
+            overflow-y: hidden;
         }
 
         .terminal {
