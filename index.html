@@ -1,18 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="css/welcome_style.css">
+    <title>Kharaj Chakraborty - Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animista.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="terminal">
-        <div class="prompt">user@anonymous:~$ ./welcome.sh</div>
-        <div id="typing-container" style="text-align: center;" class="typing-text"></div>
-        <div class="loading-bar"></div>
-    </div>
-
-    <script src="js/welcome_script.js"></script>
-</body>
+  </head>
+  <body>
+        <style>
+        :root {
+            --primary_color: #0f0f0f;
+            --secondery_color: red;
+            --text_color: white;
+            --hover_color: brightness(0) saturate(100%) invert(16%) sepia(95%) saturate(6054%) hue-rotate(359deg) brightness(97%) contrast(118%);
+            --invertion: invert(1);
+        }
+    </style>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

@@ -1,0 +1,31 @@
+/* Contact */
+
+.contact_container {
+    border: 5px solid var(--secondery_color);
+    width: 98.5vw;
+    border-radius: 5px;
+    user-select: text;
+}
+
+.contact_container:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 30px var(--secondery_color);
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.contact {
+    cursor: text;
+    padding: 20px;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+.contact>dt {
+    color: var(--secondery_color);
+
+}
+
+.contact dt>dd {
+    color: var(--text_color);
+}
