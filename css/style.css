@@ -699,8 +699,8 @@
 
         .contact_form button:hover {
             cursor: pointer;
-            background-color: var(--secondery_color);
             color: var(--primary_color);
+            background-color: var(--secondery_color);
             transition-property: color background-color;
             transition-duration: 0.5s;
             transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -718,6 +718,10 @@
         .contact_form label {
             color: var(--text_color);
             margin-left: 10px;
+        }
+
+        .contact_form > a{
+            text-align: center;
         }
 
         footer {
