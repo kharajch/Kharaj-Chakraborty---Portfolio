@@ -4,7 +4,6 @@ function send_mail() {
         email: document.querySelector("#email").value,
         comment: document.querySelector("#comment").value,
     };
-
     emailjs.send('service_f3hjjph', 'template_b3p8plq', params).then(
         (response) => {
             console.log('SUCCESS!', response.status, response.text);
