@@ -29,6 +29,21 @@
             text-decoration-color: var(--text_color);
         }
 
+        #Projects {
+            margin-top: 200px;
+        }
+
+        #Contact {
+            margin-top: 200px;
+            margin-bottom: 20px;
+        }
+
+        @media only screen and (max-width: 975px) {
+            #Projects, #Contact{
+                margin-top: 50px;
+            }
+        }
+
         /* Navbar */
         .navbar {
             overflow-x: hidden;
@@ -577,9 +592,29 @@
 
         }
 
+        @media only screen and (max-width : 410px) {
+            .projects_card {
+                transform: scale(90%);
+            }
+        }
+
+        @media only screen and (max-width : 360px) {
+            .projects_card {
+                transform: scale(80%);
+            }
+        }
+
+        @media only screen and (max-width : 320px) {
+            .projects_card {
+                transform: scale(70%);
+            }
+        }
+
         /* Contact */
         .contact_container {
             user-select: text;
+            display: flex;
+            justify-content: space-evenly;
         }
 
         .contact_container:hover {
@@ -592,7 +627,6 @@
             padding: 20px;
             font-family: "Ubuntu Mono", monospace;
             font-size: large;
-            position: absolute;
             left: 2vw;
         }
 
@@ -622,8 +656,6 @@
             border: 2px solid var(--secondery_color);
             border-radius: 5px;
             display: inline-block;
-            position: absolute;
-            right: 5vw;
 
             box-shadow: 5px 5px 30px var(--secondery_color);
             transition-property: box-shadow;
@@ -690,8 +722,7 @@
 
         footer {
             text-align: center;
-            padding: 20px;
-            padding-top: 30vh;
+            padding: 30px;
             color: var(--secondery_color);
         }
 
@@ -702,7 +733,38 @@
             font-style: normal;
         }
 
+        @media only screen and (max-width : 1060px) {
+            .contact_container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
+            .contact_form_container {
+                margin-top: 50px;
+            }
+        }
+
+        @media only screen and (max-width : 410px) {
+            .contact_container {
+                transform: scale(90%);
+            }
+
+            .contact_form_container {
+                margin-top: 30px;
+            }
+        }
+
+        @media only screen and (max-width : 370px) {
+            .contact_container {
+                transform: scale(80%);
+            }
+
+            .contact_form_container {
+                margin-top: 20px;
+            }
+        }
 
         /* Hamburger */
         .hamburger {
