@@ -688,6 +688,7 @@
             background-color: var(--primary_color);
             color: var(--text_color);
             margin: 10px;
+            scrollbar-width: none;
         }
 
         .contact_form button {
