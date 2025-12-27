@@ -476,6 +476,30 @@
             font-style: normal;
             text-align: center;
         }
+        .bubble2_container{
+            text-align: left;
+            padding-left: 15px;
+        }
+         .bubble2 {
+            display: inline-block;
+            font-family: "Cascadia Mono", sans-serif;
+            text-align: center;
+            color: var(--text_color);
+            margin-top: 30px;
+            padding: 8px;
+            border: 2px solid var(--secondery_color);
+            border-radius: 8px;
+        }
+
+        .bubble2:hover {
+            cursor: pointer;
+            color: var(--primary_color);
+            background-color: var(--secondery_color);
+            box-shadow: 5px 5px 30px var(--secondery_color);
+            transition-property: box-shadow;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
 
         .projects_card p {
             color: var(--secondery_color);
