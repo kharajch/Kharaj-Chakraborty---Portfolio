@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/animista.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll_animation.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
@@ -99,7 +100,7 @@
         <!-- About Page -->
         <h1 class="heading" id="About">About Me</h1>
 
-        <div class="about_container">
+        <div class="about_container hidden">
 
             <p class="details">I'm a passionate web developer who thrives on crafting clean, responsive, and
                 user-friendly digital experiences. With a strong foundation in modern technologies, I turn ideas into
@@ -119,7 +120,7 @@
         <!-- Projects -->
         <h1 class="heading" id="Projects">Projects</h1>
 
-        <div class="projects_container">
+        <div class="projects_container hidden">
 
 
             <div class="projects_card">
@@ -146,6 +147,7 @@
                     <a href="https://github.com/kharajch/Mind-Matters--Android"><button>View Code</button></a>
                 </div>
             </div>
+
             <div class="projects_card">
 
                 <img src="images/projects/c.jpg" alt="c">
@@ -171,11 +173,13 @@
         <!-- Contact -->
         <h1 class="heading" id="Contact">Contact Me</h1>
 
-        <div class="contact_container">
+        <div class="contact_container hidden">
             <dl class="contact">
                 <dl>Address:</dl>
                 <dd>Kharaj Chakraborty <br> Mathabhanga, Coochbehar, West
                     Bengal, India, PIN-736146</dd>
+                <dl>Phone:</dl>
+                <dd>+911234567890</dd>
                 <dl>Email:</dl>
                 <dd>kharajchakraborty@gmail.com</dd>
                 <div class="social-icons">
@@ -208,6 +212,7 @@
     </div>
     <script src="js/script.js"></script>
     <script src="js/send_mail.js"></script>
+    <script src="js/scroll_animation.js"></script>
     <footer>
         <p>&copy; 2025 kharajch. All rights reserved.</p>
     </footer>
