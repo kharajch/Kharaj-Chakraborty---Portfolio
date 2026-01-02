@@ -1,0 +1,170 @@
+/* About */
+
+          @keyframes appear {
+            from {
+                transform: translateX(100%);
+                filter: blur(100px);
+            }
+
+            to {
+                transform: translateX(0%);
+                filter: blur(0px);
+
+            }
+
+        }
+
+        .about_container {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100vw;
+            animation: appear 1s 1;
+        }
+
+        .details {
+            display: inline-block;
+            margin-top: 50px;
+            width: 50vw;
+            text-align: center;
+            color: var(--text_color);
+            font-family: "Cascadia Mono", sans-serif;
+            font-size: large;
+            color: var(--secondery_color);
+        }
+
+        .bubble {
+            display: inline-block;
+            color: var(--text_color);
+            margin-top: 30px;
+            padding: 8px;
+            margin-left: 8px;
+            border: 2px solid var(--secondery_color);
+            border-radius: 8px;
+        }
+
+        .bubble:hover {
+            cursor: pointer;
+            color: var(--primary_color);
+            background-color: var(--secondery_color);
+            border: 5px solid var(--secondery_color);
+            box-shadow: 5px 5px 30px var(--secondery_color);
+            transition-property: box-shadow;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .myimg {
+            display: inline-block;
+            height: 740px;
+            width: 555px;
+            border-radius: 8px;
+            margin-top: 50px;
+            border: 5px solid var(--secondery_color);
+            transition-property: border;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .myimg:hover {
+            cursor: pointer;
+            box-shadow: 5px 5px 30px var(--secondery_color);
+            transition-property: box-shadow;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .myimg2 {
+            display: none;
+        }
+
+        .myimg2:hover {
+            cursor: pointer;
+            box-shadow: 5px 5px 30px var(--secondery_color);
+            transition-property: box-shadow;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .name2 {
+            display: none;
+        }
+        
+         @media only screen and (max-width : 1200px) {
+            .about_container {
+                margin-left: 50px;
+            }
+
+            .myimg {
+                transform: scale(70%);
+                position: relative;
+                bottom: 110px;
+            }
+
+            .details {
+                font-size: large;
+                text-align: unset;
+                word-break: break-all;
+            }
+        }
+
+        @media only screen and (max-width : 860px) {
+            .about_container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 0px;
+            }
+
+            .myimg_container{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .myimg {
+                position: static;
+                transform: scale(100%);
+            }
+
+            .details {
+                width: 90vw;
+                word-break: keep-all;
+                font-size: large;
+            }
+        }
+
+        @media only screen and (max-width : 570px) {
+            .myimg {
+                transform: scale(90%);
+            }
+
+            .details {
+                width: 90vw;
+                word-break: keep-all;
+            }
+        }
+
+        @media only screen and (max-width : 550px) {
+            .myimg {
+                display: none;
+            }
+
+            .myimg2 {
+                display: inline-block;
+                margin-top: 50px;
+                border-radius: 50%;
+                border: 5px solid var(--secondery_color);
+            }
+
+            .name2 {
+                display: block;
+                margin-top: 20px;
+                color: var(--text_color);
+                font-size: x-large;
+                font-family: "Stack Sans Notch", sans-serif;
+            }
+
+            .myimg2_container {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
