@@ -1,3 +1,4 @@
+import Welcome from './components/welcome'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
@@ -10,26 +11,26 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path : "/",
-      element : <><Navbar /><Home/></>
+      path: "/",
+      element: <><Welcome /></>
     },
     {
-      path : "/Home",
-      element : <><Navbar /><Home/></>
+      path: "/Home",
+      element: <><Navbar /><Home /></>
     },
     {
-      path : "/about",
-      element : <><Navbar /><About/></>
+      path: "/about",
+      element: <><Navbar /><About /></>
     },
     {
-      path : "/projects",
-      element : <><Navbar /><Projects/></>
+      path: "/projects",
+      element: <><Navbar /><Projects /></>
     },
     {
-      path : "/contact",
-      element : <><Navbar /><Contact/></>
+      path: "/contact",
+      element: <><Navbar /><Contact /></>
     },
-  ]) 
+  ])
   return (
     <>
       <div className="main">
