@@ -23,9 +23,9 @@ const Home = () => {
         </div>
         <br />
         <div className="social-icons roll-in-blurred-left">
-          <a to="https://github.com/kharajch"><img src="images/social/github.png" alt="github" /></a>
-          <a to="https://www.linkedin.com/in/kharajch"><img src="images/social/linkedin.png" alt="linkedin" /></a>
-          <a to="https://x.com/kharajch"><img src="images/social/twitter.png" alt="twitter" /></a>
+          <Link href="https://github.com/kharajch"><img src="images/social/github.png" alt="github" /></Link>
+          <Link href="https://www.linkedin.com/in/kharajch"><img src="images/social/linkedin.png" alt="linkedin" /></Link>
+          <Link href="https://x.com/kharajch"><img src="images/social/twitter.png" alt="twitter" /></Link>
         </div>
       </div>
     </>
