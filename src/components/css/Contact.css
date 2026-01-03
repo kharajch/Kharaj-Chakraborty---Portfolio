@@ -12,6 +12,7 @@
             }
 
         }
+
         .contact_container {
             user-select: text;
             display: flex;
@@ -75,13 +76,14 @@
 
         .contact_form {
             margin: 30px;
+            margin-bottom: 0px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             font-family: "Ubuntu Mono", monospace;
         }
 
-        .contact_form input,
+        .contact_form_container input,
         textarea,
         button {
             padding: 5px;
@@ -93,14 +95,14 @@
             scrollbar-width: none;
         }
 
-        .contact_form button {
+        .contact_form_container button {
             border-color: var(--secondery_color);
             font-family: "Ubuntu Mono", monospace;
             font-style: italic;
             padding: 20px;
         }
 
-        .contact_form button:hover {
+        .contact_form_container button:hover {
             cursor: pointer;
             color: var(--primary_color);
             background-color: var(--secondery_color);
@@ -113,6 +115,13 @@
             transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
+        .submit_btn_container {
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
         .contact_form input {
             width: 300px;
             height: 40px;
@@ -123,7 +132,7 @@
             margin-left: 10px;
         }
 
-        .contact_form > a{
+        .contact_form>a {
             text-align: center;
         }
 

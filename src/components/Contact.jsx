@@ -1,11 +1,15 @@
-import { useRef } from "react";
+import { useState } from "react"
 import "./css/Contact.css"
 const Contact = () => {
 
-  const idname = useRef()
-  const idemail = useRef()
-  const idcomment = useRef()
-  const idsubmit_btn = useRef()
+  const [Form, setForm] = useState([{
+    name: "",
+    email: "",
+    message: ""
+  }])
+  const handleChange = (e) => {
+    setForm({ ...Form, [e.target.name]: e.target.value });
+  }
 
   return (
     <>
@@ -30,17 +34,18 @@ const Contact = () => {
 
 
         <div className="contact_form_container">
-          <form className="contact_form">
+          <form className="contact_form" method="POST" action={"http://localhost:3000/"}>
             <label htmlFor="name">Name :</label>
-            <input type="text" id="name" ref={idname} required />
+            <input type="text" id="name" name="name" value={Form.name} onChange={handleChange} required />
 
             <label htmlFor="email">Email :</label>
-            <input type="text" id="email" ref={idemail} required />
+            <input type="text" id="email" name="email" value={Form.email} onChange={handleChange} required />
 
             <label htmlFor="comment">Message :</label>
-            <textarea id="comment" rows={10} cols={39} ref={idcomment} required></textarea>
-
-            <button id="submit_btn" ref={idsubmit_btn}>Send Message</button>
+            <textarea id="comment" rows={10} cols={39} name="message" value={Form.message} onChange={handleChange} required></textarea>
+            <div className="submit_btn_container">
+              <button id="submit_btn" type="submit">Send Message</button>
+            </div>
           </form>
         </div>
       </div>

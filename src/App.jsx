@@ -15,19 +15,19 @@ function App() {
       element: <><Welcome /></>
     },
     {
-      path: "/Home",
+      path: "/home",
       element: <><Navbar /><Home /></>
     },
     {
-      path: "/About",
+      path: "/about",
       element: <><Navbar /><About /></>
     },
     {
-      path: "/Projects",
+      path: "/projects",
       element: <><Navbar /><Projects /></>
     },
     {
-      path: "/Contact",
+      path: "/contact",
       element: <><Navbar /><Contact /></>
     },
   ])
