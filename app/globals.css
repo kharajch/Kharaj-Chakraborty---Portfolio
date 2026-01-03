@@ -1,0 +1,65 @@
+ /* Universal*/
+ :root {
+     --primary_color: #0f0f0f;
+     --secondery_color: red;
+     --text_color: white;
+     --hover_color: brightness(0) saturate(100%) invert(16%) sepia(95%) saturate(6054%) hue-rotate(359deg) brightness(97%) contrast(118%);
+     --invertion: invert(1);
+ }
+
+ * {
+     margin: 0px;
+     padding: 0px;
+     scroll-behavior: smooth;
+ }
+
+ .main {
+     overflow-x: hidden;
+     user-select: none;
+ }
+
+ body {
+     background-color: var(--primary_color);
+ }
+
+ .heading {
+     font-family: "Ubuntu Mono", monospace;
+     text-align: center;
+     color: var(--secondery_color);
+     text-decoration: line-through;
+     text-decoration-color: var(--text_color);
+ }
+
+ #About {
+     padding-top: 100px;
+ }
+
+ #Projects {
+     padding-top: 100px;
+ }
+
+ #Contact {
+     padding-top: 100px;
+     padding-bottom: 20px;
+ }
+
+ footer {
+     text-align: center;
+     padding: 30px;
+     color: var(--secondery_color);
+ }
+
+ footer p {
+     font-family: "Inter", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     font-style: normal;
+ }
+
+ @media only screen and (max-width: 975px) {
+
+     #Projects,
+     #Contact {
+         padding-bottom: 0px;
+     }
+ }

@@ -1,6 +1,5 @@
+"use client"
 import Card from "./components/Card"
-import "./css/Projects.css"
-
 const Projects = () => {
 
   const project_details = [{

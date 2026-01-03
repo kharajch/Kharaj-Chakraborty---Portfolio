@@ -1,5 +1,5 @@
         /* Home Page */
-         @keyframes appear {
+        @keyframes appear {
             from {
                 transform: translateX(-100%);
                 filter: blur(100px);
@@ -12,6 +12,7 @@
             }
 
         }
+
         .home_container {
             padding: 50px 50px;
             padding-top: 100px;

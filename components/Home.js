@@ -1,6 +1,5 @@
-import "./css/Home.css"
-import { Link } from "react-router-dom"
-
+"use client"
+import Link from "next/link"
 const Home = () => {
   return (
     <>
@@ -18,8 +17,8 @@ const Home = () => {
         <h1 className="slogan swing-in-top-fwd">"LET'S BUILD SOMETHING AMAZING TOGETHER"</h1>
         <br />
         <div className="btn">
-          <Link to="/Projects"><button className="btn1 slide-in-elliptic-top-fwd">View My Work</button></Link>
-          <Link to="/Contact"><button className="btn1 slide-in-elliptic-top-fwd">Get In Touch</button></Link>
+          <Link href="/Projects"><button className="btn1 slide-in-elliptic-top-fwd">View My Work</button></Link>
+          <Link href="/Contact"><button className="btn1 slide-in-elliptic-top-fwd">Get In Touch</button></Link>
         </div>
         <br />
         <div className="social-icons roll-in-blurred-left">

@@ -1,0 +1,109 @@
+ /* Navbar */
+ .navbar {
+     overflow-x: hidden;
+     position: fixed;
+     display: flex;
+     width: 100%;
+     height: 70px;
+     background-color: var(--primary_color);
+     border-bottom: 2px solid var(--secondery_color);
+     z-index: 100;
+     font-family: "Ubuntu Mono", monospace;
+     justify-content: space-between;
+     align-items: center;
+     box-shadow: 10px 10px 300px var(--secondery_color);
+     transition-property: box-shadow;
+     transition-duration: 0.5s;
+     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+ }
+
+ nav ul {
+     list-style: none;
+     display: flex;
+     gap: 2vw;
+ }
+
+ nav ul a {
+     text-decoration: none;
+     color: var(--text_color);
+ }
+
+ nav ul a:hover {
+     color: var(--secondery_color);
+     transition-property: color;
+     transition-duration: 2s;
+     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+ }
+
+ nav ul a:last-child {
+     margin-right: 2vw;
+ }
+
+ .logo {
+     display: inline-flex;
+     margin-left: 2vw;
+     color: var(--text_color);
+ }
+
+ .logo::after {
+     content: "ch";
+     color: var(--secondery_color);
+ }
+
+ .logo:hover {
+     cursor: pointer;
+ }
+
+ /* Hamburger */
+ .hamburger {
+     display: none;
+     cursor: pointer;
+     background: transparent;
+     border: none;
+     width: 30px;
+     height: 30px;
+     position: relative;
+     z-index: 100;
+     margin-right: 10px;
+ }
+
+ .hamburger-line {
+     display: block;
+     height: 3px;
+     width: 100%;
+     background-color: white;
+     border-radius: 2px;
+     transition: all 0.3s ease;
+ }
+
+ .hamburger-line:nth-child(1) {
+     margin-bottom: 7px;
+ }
+
+ .hamburger-line:nth-child(2) {
+     margin-bottom: 7px;
+ }
+
+ /* Hamburger Animation */
+ .hamburger.active .hamburger-line:nth-child(1) {
+     transform: translateY(10px) rotate(45deg);
+ }
+
+ .hamburger.active .hamburger-line:nth-child(2) {
+     opacity: 0;
+ }
+
+ .hamburger.active .hamburger-line:nth-child(3) {
+     transform: translateY(-10px) rotate(-45deg);
+ }
+
+ /* Mobile Menu */
+ @media screen and (max-width: 740px) {
+     .hamburger {
+         display: block;
+     }
+
+     .nav_ul {
+         display: none;
+     }
+ }

@@ -1,11 +1,12 @@
+"use client"
+
 import { useState } from "react"
-import "./css/Contact.css"
 const Contact = () => {
 
   const [Form, setForm] = useState([{
-    name: "",
-    email: "",
-    message: ""
+    name: " ",
+    email: " ",
+    message: " "
   }])
   const handleChange = (e) => {
     setForm({ ...Form, [e.target.name]: e.target.value });
@@ -17,14 +18,14 @@ const Contact = () => {
 
       <div className="contact_container hidden">
         <dl className="contact">
-          <dl>Address:</dl>
-          <dd>Kharaj Chakraborty
+          <dl className="dl">Address:</dl>
+          <dd className="dd">Kharaj Chakraborty
             <br />
             Mathabhanga, Coochbehar, West
             Bengal, India, PIN-736146
           </dd>
-          <dl>Email:</dl>
-          <dd>kharajchakraborty@gmail.com</dd>
+          <dl className="dl">Email:</dl>
+          <dd className="dd">kharajchakraborty@gmail.com</dd>
           <div className="social-icons">
             <a href="https://github.com/kharajch"><img src="images/social/github.png" alt="github" /></a>
             <a href="https://www.linkedin.com/in/kharajch"><img src="images/social/linkedin.png" alt="linkedin" /></a>

@@ -1,5 +1,4 @@
-import "./css/About.css"
-
+"use client"
 const About = () => {
   return (
     <>
