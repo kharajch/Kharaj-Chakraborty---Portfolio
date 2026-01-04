@@ -1,10 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./animista.css"
-import "./Navbar.css"
-import "./Home.css"
-import "./About.css"
-import "./Projects.css"
-import "./Contact.css"
+import "./assets/css/animista.css"
+import "./assets/css/Navbar.css"
+import "./assets/css/Home.css"
+import "./assets/css/About.css"
+import "./assets/css/Projects.css"
+import "./assets/css/Contact.css"
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
