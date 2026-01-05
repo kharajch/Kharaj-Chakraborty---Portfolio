@@ -13,9 +13,9 @@ const About = () => {
         <span className="bubble">CSS</span>
         <span className="bubble">JS</span>
         <span className="bubble">Node JS</span>
-        <span className="bubble">React JS</span>
+        <span className="bubble">React</span>
         <br />
-        <span className="bubble">Express JS</span>
+        <span className="bubble">Express</span>
         <span className="bubble">Next JS</span>
         </p>
         <div className="myimg_container">
