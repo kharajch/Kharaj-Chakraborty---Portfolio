@@ -1,0 +1,27 @@
+.terminal-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  color: var(--secondery_color);
+}
+
+.terminal-window {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Custom blink animation if not using Tailwind's animate-pulse */
+.cursor-block {
+  display: inline-block;
+  background-color: var(--secondery_color);
+  width: 10px;
+  height: 1.2rem;
+}
+
+.back_to_home {
+  font-size: large;
+  color: var(--secondery_color);
+}
