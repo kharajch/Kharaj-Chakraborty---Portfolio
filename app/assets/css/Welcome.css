@@ -16,13 +16,13 @@ body {
 }
 
 /* Container for the whole screen */
-.terminal-container {
+.welcome-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   color: var(--term-red);
   text-shadow: var(--term-glow);
   position: relative;
@@ -31,6 +31,7 @@ body {
 
 /* The actual terminal box */
 .terminal-box {
+  margin-top: 25vh;
   width: 80%;
   max-width: 800px;
   min-height: 400px;

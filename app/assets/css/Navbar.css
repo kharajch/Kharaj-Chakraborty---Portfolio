@@ -1,109 +1,133 @@
- /* Navbar */
- .navbar {
-     overflow-x: hidden;
-     position: fixed;
-     display: flex;
-     width: 100%;
-     height: 70px;
-     background-color: var(--primary_color);
-     border-bottom: 2px solid var(--secondery_color);
-     z-index: 100;
-     font-family: "Ubuntu Mono", monospace;
-     justify-content: space-between;
-     align-items: center;
-     box-shadow: 10px 10px 300px var(--secondery_color);
-     transition-property: box-shadow;
-     transition-duration: 0.5s;
-     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
- }
+/* Navbar (Desktop) */
+.navbar * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
- nav ul {
-     list-style: none;
-     display: flex;
-     gap: 2vw;
- }
+.navbar {
+  background: var(--primary_color);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 2px solid var(--secondery_color);
+}
 
- nav ul a {
-     text-decoration: none;
-     color: var(--text_color);
- }
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 50px;
+}
 
- nav ul a:hover {
-     color: var(--secondery_color);
-     transition-property: color;
-     transition-duration: 2s;
-     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
- }
+.navbar-logo {
+  color: var(--text_color);
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
- nav ul a:last-child {
-     margin-right: 2vw;
- }
 
- .logo {
-     display: inline-flex;
-     margin-left: 2vw;
-     color: var(--text_color);
- }
+.navbar-logo span {
+  color: var(--secondery_color);
+}
 
- .logo::after {
-     content: "ch";
-     color: var(--secondery_color);
- }
 
- .logo:hover {
-     cursor: pointer;
- }
+.nav-menu {
+  display: flex;
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  justify-content: flex-end;
+}
 
- /* Hamburger */
- .hamburger {
-     display: none;
-     cursor: pointer;
-     background: transparent;
-     border: none;
-     width: 30px;
-     height: 30px;
-     position: relative;
-     z-index: 100;
-     margin-right: 10px;
- }
+.nav-item {
+  height: 80px;
+}
 
- .hamburger-line {
-     display: block;
-     height: 3px;
-     width: 100%;
-     background-color: white;
-     border-radius: 2px;
-     transition: all 0.3s ease;
- }
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  font-weight: 500;
+  transition: color 0.2s ease-out;
+}
 
- .hamburger-line:nth-child(1) {
-     margin-bottom: 7px;
- }
+.nav-links:hover {
+  color: var(--secondery_color);
+}
 
- .hamburger-line:nth-child(2) {
-     margin-bottom: 7px;
- }
+/* Hamburger Icon */
+/* Hidden on desktop */
 
- /* Hamburger Animation */
- .hamburger.active .hamburger-line:nth-child(1) {
-     transform: translateY(10px) rotate(45deg);
- }
+.menu-icon {
+  display: none;
+}
 
- .hamburger.active .hamburger-line:nth-child(2) {
-     opacity: 0;
- }
+/* Navbar (Mobile) */
 
- .hamburger.active .hamburger-line:nth-child(3) {
-     transform: translateY(-10px) rotate(-45deg);
- }
+@media screen and (max-width: 960px) {
+  .navbar-container {
+    padding: 0 30px;
+  }
 
- /* Mobile Menu */
- @media screen and (max-width: 740px) {
-     .hamburger {
-         display: block;
-     }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45vh;
+    position: absolute;
+    top: 72px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: var(--primary_color);
+    border-bottom: 2px solid var(--secondery_color);
+  }
 
-     .nav_ul {
-         display: none;
-     }
- }
+  .nav-menu.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    width: 100%;
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links:hover {
+    background-color: #1a1a1a;
+    border-radius: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}

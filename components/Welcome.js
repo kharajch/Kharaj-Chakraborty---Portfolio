@@ -63,7 +63,7 @@ const Welcome = () => {
   return (
     <>
       <div className="scanlines"></div>
-      <div className="terminal-container">
+      <div className="welcome-container">
         <div className="terminal-box">
           <div className="terminal-header">
             <span>root@system: ~</span>
