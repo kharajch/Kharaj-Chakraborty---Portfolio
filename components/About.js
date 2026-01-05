@@ -14,6 +14,7 @@ const About = () => {
         <span className="bubble">JS</span>
         <span className="bubble">Node JS</span>
         <span className="bubble">React JS</span>
+        <br />
         <span className="bubble">Express JS</span>
         <span className="bubble">Next JS</span>
         </p>
