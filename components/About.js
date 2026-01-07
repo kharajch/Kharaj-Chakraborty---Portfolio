@@ -14,6 +14,7 @@ const About = () => {
         <span className="bubble">JS</span>
         <span className="bubble">Node JS</span>
         <span className="bubble">React JS</span>
+        <span className="bubble">Next JS</span>
         </p>
         <div className="myimg_container">
           <img src="images/kharaj.jpg" alt="kharaj" className="myimg" />
