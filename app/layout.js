@@ -22,8 +22,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Kharaj Chakraborty - Portfolio",
-  description: `Building the web of tomorrow, one line of code at a time. I am Kharaj Chakraborty, a Full Stack Developer specializing in React & NextJS. I engineer scalable, high-performance digital solutions that drive growth. From backend architecture to intuitive front-end design, let’s turn your complex problems into elegant code.`,
+  title: "Kharaj Chakraborty --- Portfolio",
+  description: `I'm a passionate web developer who thrives on crafting clean, responsive, and
+                user-friendly digital experiences. With a strong foundation in modern technologies, I turn ideas into
+                elegant, functional websites that make an impact.`,
 };
 
 export default function RootLayout({ children }) {
