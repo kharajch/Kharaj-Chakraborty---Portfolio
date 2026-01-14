@@ -35,7 +35,7 @@ const Contact = () => {
 
 
         <div className="contact_form_container">
-          <form className="contact_form" method="POST" action={"https://kharajch-contact-form-submit-api-production.up.railway.app/"}>
+          <form className="contact_form" method="POST" action={"https://kharajch.vercel.app/api/"}>
             <label htmlFor="name">Name :</label>
             <input type="text" id="name" name="name" value={Form.name} onChange={handleChange} required />
 
