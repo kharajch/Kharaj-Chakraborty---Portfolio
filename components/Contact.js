@@ -1,11 +1,16 @@
 "use client"
 
-import { useRef } from "react";
-import { HandleSubmit } from "./components/HandleSubmit";
-
+import { useState } from "react"
 const Contact = () => {
 
-  const form_ref = useRef()
+  const [Form, setForm] = useState([{
+    name: " ",
+    email: " ",
+    message: " "
+  }])
+  const handleChange = (e) => {
+    setForm({ ...Form, [e.target.name]: e.target.value });
+  }
 
   return (
     <>
@@ -30,15 +35,15 @@ const Contact = () => {
 
 
         <div className="contact_form_container">
-          <form className="contact_form" ref={form_ref} action={(e) => { HandleSubmit(e); form_ref.current.reset()}}>
+          <form className="contact_form" method="POST" action={"https://kharajch-contact-form-submit-api-production.up.railway.app/"}>
             <label htmlFor="name">Name :</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" value={Form.name} onChange={handleChange} required />
 
             <label htmlFor="email">Email :</label>
-            <input type="text" id="email" name="email" required />
+            <input type="text" id="email" name="email" value={Form.email} onChange={handleChange} required />
 
             <label htmlFor="comment">Message :</label>
-            <textarea id="comment" rows={10} cols={39} name="message" required></textarea>
+            <textarea id="comment" rows={10} cols={39} name="message" value={Form.message} onChange={handleChange} required></textarea>
             <div className="submit_btn_container">
               <button id="submit_btn" type="submit">Send Message</button>
             </div>
