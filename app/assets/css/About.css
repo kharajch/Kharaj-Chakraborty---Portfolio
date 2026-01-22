@@ -75,6 +75,7 @@
 
         .myimg2 {
             display: none;
+            width: 150px;
         }
 
         .myimg2:hover {
