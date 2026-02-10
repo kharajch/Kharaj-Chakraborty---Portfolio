@@ -65,17 +65,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/About" className="nav-links" onClick={toggleMenu}>
+            <Link href="#About" className="nav-links" onClick={toggleMenu}>
               About
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/Projects" className="nav-links" onClick={toggleMenu}>
+            <Link href="#Projects" className="nav-links" onClick={toggleMenu}>
               Projects
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/Contact" className="nav-links" onClick={toggleMenu}>
+            <Link href="#Contact" className="nav-links" onClick={toggleMenu}>
               Contact
             </Link>
           </li>
