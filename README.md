@@ -19,6 +19,30 @@ A modern, responsive personal portfolio website built to showcase web developmen
 
 ---
 
+## 💻 Skills & Expertise
+
+### Frontend Development
+- **HTML5** - Semantic markup and web standards
+- **CSS3** - Advanced styling, animations, and responsive design
+- **JavaScript (ES6+)** - Modern JavaScript programming
+- **React** - Component-based UI development
+- **Next.js** - React framework for production-grade applications
+- **Responsive Design** - Mobile-first approach and cross-browser compatibility
+
+### Backend Development
+- **Node.js** - Server-side JavaScript runtime
+- **Express.js** - Web application framework for building APIs
+- **MongoDB** - NoSQL database design and management
+- **RESTful APIs** - Backend API design and implementation
+
+### Tools & Platforms
+- **Vercel** - Next.js deployment and hosting
+- **EmailJS** - Client-side email integration
+- **Git & GitHub** - Version control and collaboration
+- **ESLint** - Code quality and linting
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -35,6 +59,50 @@ A modern, responsive personal portfolio website built to showcase web developmen
 ### Developer Tools
 - **ESLint** 9 - Code quality and linting
 - **jsconfig.json** - Path aliases for clean imports
+
+---
+
+## 🎯 Featured Projects
+
+### 1. **Kharaj Chakraborty Portfolio**
+A modern, responsive personal portfolio website built to showcase web development skills and projects.
+
+**Technologies**: Next.js, React, EmailJS, MongoDB
+**Repository**: [GitHub - Portfolio](https://github.com/kharajch/Kharaj-Chakraborty---Portfolio)
+**Features**:
+- Single Page Application (SPA) with smooth navigation
+- Responsive design for all devices
+- MongoDB contact form integration
+- Social media links integration
+- SEO optimized
+
+---
+
+### 2. **kharajch PlayMusic**
+A modern, full-featured music player and discovery web application with advanced filtering capabilities.
+
+**Technologies**: Next.js, React, Client-side APIs
+**Repository**: [GitHub - PlayMusic](https://github.com/kharajch/kharajch---PlayMusic)
+**Features**:
+- Browse and search songs
+- Advanced filtering by language, genre, and artist
+- Responsive music player interface
+- Modern UI with smooth animations
+- Real-time song discovery
+
+---
+
+### 3. **kharajch MindMatters**
+A comprehensive mental health assessment tool that helps users understand their emotional and psychological well-being.
+
+**Technologies**: HTML5, CSS3, JavaScript (ES6+), Claude AI (Haiku 4.5)
+**Repository**: [GitHub - MindMatters](https://github.com/kharajch/kharajch---MindMatters)
+**Features**:
+- Detailed mental health questionnaire
+- AI-powered personalized results
+- User-friendly assessment interface
+- Evidence-based evaluation framework
+- Mental wellness recommendations
 
 ---
 

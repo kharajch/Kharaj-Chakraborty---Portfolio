@@ -46,7 +46,6 @@
             cursor: pointer;
             color: var(--primary_color);
             background-color: var(--secondery_color);
-            border: 5px solid var(--secondery_color);
             box-shadow: 5px 5px 30px var(--secondery_color);
             transition-property: box-shadow;
             transition-duration: 0.5s;

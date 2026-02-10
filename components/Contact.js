@@ -1,16 +1,29 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
 
-  const [Form, setForm] = useState([{
-    name: " ",
-    email: " ",
-    message: " "
-  }])
-  const handleChange = (e) => {
-    setForm({ ...Form, [e.target.name]: e.target.value });
-  }
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_f3hjjph', 'template_b3p8plq', form.current, {
+        publicKey: 'ckafbeg1B21dLSeyy',
+      })
+      .then(
+        () => {
+          alert('Message Sent SUCCESSFULLY!');
+        },
+        (error) => {
+          aleart('FAILED To Send Message!');
+        },
+      );
+
+      e.target.reset();
+  };
 
   return (
     <>
@@ -35,15 +48,15 @@ const Contact = () => {
 
 
         <div className="contact_form_container">
-          <form className="contact_form" method="POST" action={"https://kharajch-contact-form-submit-api-production.up.railway.app/"}>
+          <form className="contact_form" ref={form} onSubmit={sendEmail}>
             <label htmlFor="name">Name :</label>
-            <input type="text" id="name" name="name" value={Form.name} onChange={handleChange} required />
+            <input type="text" id="name" name="name" required />
 
             <label htmlFor="email">Email :</label>
-            <input type="text" id="email" name="email" value={Form.email} onChange={handleChange} required />
+            <input type="text" id="email" name="email" required />
 
             <label htmlFor="comment">Message :</label>
-            <textarea id="comment" rows={10} cols={39} name="message" value={Form.message} onChange={handleChange} required></textarea>
+            <textarea id="comment" rows={10} cols={39} name="message" required></textarea>
             <div className="submit_btn_container">
               <button id="submit_btn" type="submit">Send Message</button>
             </div>

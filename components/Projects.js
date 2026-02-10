@@ -2,16 +2,44 @@
 import Card from "./components/Card"
 const Projects = () => {
 
+  const CardItems = [];
   const project_details = [
+    {
+      name: "Kharaj Chakraborty---Portfolio",
+      lang: ["NextJS", "EmailJS", "AnimistaCSS"],
+      repo: `https://github.com/kharajch/Kharaj-Chakraborty---Portfolio`,
+      img: "Portfolio.png",
+      details: `Kharaj Chakraborty---Portfolio is a modern, responsive personal portfolio website built to showcase web development skills and projects. Built with cutting-edge technologies including Next.js, React, and MongoDB.`,
+
+    },
     {
       name: "kharajch--PlayMusic",
       lang: ["NextJS"],
       repo: `https://github.com/kharajch/kharajch---PlayMusic`,
       img: "PlayMusic.png",
-      details: `This is a Basic Music Player App, built with Next.js and designed to provide a clean, lightweight audio playback experience. It includes core features such as play, pause, stop, and track navigation, with a simple and intuitive interface that makes browsing and listening effortless. The app leverages Next.js for fast rendering and modular component structure, ensuring maintainability and scalability. Styling is handled with native CSS modules for clarity and isolation, while React hooks manage state and playback logic. This project serves as a practical demonstration of building interactive media applications with modern web technologies, highlighting both functionality and simplicity.`,
+      details: `kharajch---PlayMusic is a modern, full-featured music player and discovery web application built with Next.js and React. Browse, search, and play songs with advanced filtering capabilities by language, genre, and artist.`,
+
+    },
+    {
+      name: "kharajch--MindMatters",
+      lang: ["HTML", "CSS", "JS", "Haiku 4.5"],
+      repo: `https://github.com/kharajch/kharajch---MindMatters`,
+      img: "MindMatters.png",
+      details: `Mind Matters provides a comprehensive mental health assessment tool that helps users understand their emotional and psychological well-being. The application guides users through a series of detailed questions and generates personalized results based on their responses.`,
 
     },
   ]
+
+  for (let i = 0; i < project_details.length; i++) {
+    CardItems.push(<Card
+          name={project_details[i].name}
+          lang={project_details[i].lang}
+          repo={project_details[i].repo}
+          img={project_details[i].img}
+          details={project_details[i].details} 
+          key = {i} />);
+    
+  }
 
   return (
     <>
@@ -19,12 +47,7 @@ const Projects = () => {
 
       <div className="projects_container hidden">
 
-        <Card
-          name={project_details[0].name}
-          lang={project_details[0].lang}
-          repo={project_details[0].repo}
-          img={project_details[0].img}
-          details={project_details[0].details} />
+        {CardItems}
 
       </div>
     </>
