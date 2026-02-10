@@ -191,7 +191,7 @@ This project is not licensed yet - feel free to use it as a template for your ow
 
 Web Developer | Full Stack Developer | Open Source Enthusiast
 
-📧 **Email**: [kharajchakraborty@gmail.com]
+📧 **Email**: [kharajchakraborty@gmail.com](kharajchakraborty@gmail.com)
 🐙 **GitHub**: [@kharajch](https://github.com/kharajch)
 💼 **LinkedIn**: [@kharajch](https://www.linkedin.com/in/kharajch)
 🐦 **Twitter**: [@kharajch](https://x.com/kharajch)
