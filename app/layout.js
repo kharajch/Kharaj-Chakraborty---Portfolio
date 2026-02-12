@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Kharaj Chakraborty --- Portfolio",
+  title: "Kharaj Chakraborty (@kharajch) --- Portfolio",
   description: `I'm a passionate web developer who thrives on crafting clean, responsive, and
                 user-friendly digital experiences. With a strong foundation in modern technologies, I turn ideas into
                 elegant, functional websites that make an impact.`,
