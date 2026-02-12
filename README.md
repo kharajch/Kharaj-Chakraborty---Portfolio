@@ -282,7 +282,7 @@ Found a bug or have a suggestion? Feel free to:
 ### Version 1.0.0
 - ✅ Converted to Single Page Application (SPA)
 - ✅ Responsive design for all devices
-- ✅ MongoDB contact form integration
+- ✅ EmailJS contact form integration
 - ✅ Project showcase section
 - ✅ Social media links
 - ✅ SEO optimization
