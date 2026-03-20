@@ -7,7 +7,7 @@ const About = () => {
         <p className="details">
           I am a passionate Full Stack Developer and a Computer Science student at APC Roy Government College.
 
-          I love building scalable web applications and exploring the depths of Computer Science. When I am not coding, you can usually find me connecting with new people or creating content for my meme edit channel, <a href="https://www.youtube.com/@kharajch.editzz">kharajch.editzz</a>.
+          I love building scalable web applications and exploring the depths of Computer Science.
         </p>
         <br />
 
@@ -106,55 +106,10 @@ const About = () => {
           <a href="https://code.visualstudio.com/" target="_blank">
             <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
           </a>
-          <a href="https://www.jetbrains.com/pycharm/" target="_blank">
-            <img src="https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm" />
-          </a>
           <br />
-          <a href="https://www.jetbrains.com/idea/" target="_blank">
-            <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="IntelliJ IDEA" />
-          </a>
-          <a href="https://cursor.com/" target="_blank">
-            <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor" />
-          </a>
           <a href="https://antigravity.google/" target="_blank">
             <img src="https://img.shields.io/badge/Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity" />
           </a>
-          <a href="https://replit.com/" target="_blank">
-            <img src="https://img.shields.io/badge/Replit-F26207?style=for-the-badge&logo=replit&logoColor=white" alt="Replit" />
-          </a>
-          <h3>🤖 AI Tools & Assistants</h3>
-          <a href="https://gemini.google.com/" target="_blank">
-            <img src="https://img.shields.io/badge/Gemini-8E75FF?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini" />
-          </a>
-          <a href="https://chat.openai.com/" target="_blank">
-            <img src="https://img.shields.io/badge/ChatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white" alt="ChatGPT" />
-          </a>
-          <a href="https://github.com/features/copilot" target="_blank">
-            <img src="https://img.shields.io/badge/Copilot-0078D7?style=for-the-badge&logo=microsoftcopilot&logoColor=white" alt="Copilot" />
-          </a>
-          <a href="https://claude.ai/" target="_blank">
-            <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude" />
-          </a>
-          <a href="https://x.ai/" target="_blank">
-            <img src="https://img.shields.io/badge/Grok-000000?style=for-the-badge&logo=x&logoColor=white" alt="Grok" />
-          </a>
-          <a href="https://www.deepseek.com/" target="_blank">
-            <img src="https://img.shields.io/badge/DeepSeek-4D6BFE?style=for-the-badge&logo=deepseek&logoColor=white" alt="DeepSeek" />
-          </a>
-          <a href="https://kimi.moonshot.cn/" target="_blank">
-            <img src="https://img.shields.io/badge/Kimi-5C2D91?style=for-the-badge&logo=kimi&logoColor=white" alt="Kimi" />
-          </a>
-          <a href="https://lovable.dev/" target="_blank">
-            <img src="https://img.shields.io/badge/Lovable-FF0066?style=for-the-badge&logo=rocket&logoColor=white" alt="Lovable" />
-          </a>
-          <br />
-          <a href="https://aistudio.google.com/" target="_blank">
-            <img src="https://img.shields.io/badge/Google_AI_Studio-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google AI Studio" />
-          </a>
-          <a href="https://emergent.sh/" target="_blank">
-            <img src="https://img.shields.io/badge/Emergent-0052FF?style=for-the-badge&logo=rocket&logoColor=white" alt="Emergent" />
-          </a>
-
         </div>
 
       </div>
