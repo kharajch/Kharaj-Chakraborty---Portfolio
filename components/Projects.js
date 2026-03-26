@@ -13,11 +13,11 @@ const Projects = () => {
 
     },
     {
-      name: "kharajch--PlayMusic",
+      name: "kharajch--SongFindX",
       lang: ["NextJS"],
-      repo: `https://github.com/kharajch/kharajch---PlayMusic`,
-      img: "PlayMusic.png",
-      details: `kharajch---PlayMusic is a modern, full-featured music player and discovery web application built with Next.js and React. Browse, search, and play songs with advanced filtering capabilities by language, genre, and artist.`,
+      repo: `https://github.com/kharajch/kharajch---SongFindX`,
+      img: "SongFindX.png",
+      details: `kharajch---SongFindX is a modern, full-featured music discovery web application built with Next.js and React. Browse, search, play, download songs with advanced filtering capabilities by language, genre, and artist.`,
 
     },
     {
@@ -32,13 +32,13 @@ const Projects = () => {
 
   for (let i = 0; i < project_details.length; i++) {
     CardItems.push(<Card
-          name={project_details[i].name}
-          lang={project_details[i].lang}
-          repo={project_details[i].repo}
-          img={project_details[i].img}
-          details={project_details[i].details} 
-          key = {i} />);
-    
+      name={project_details[i].name}
+      lang={project_details[i].lang}
+      repo={project_details[i].repo}
+      img={project_details[i].img}
+      details={project_details[i].details}
+      key={i} />);
+
   }
 
   return (
